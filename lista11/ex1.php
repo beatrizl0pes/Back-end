@@ -1,4 +1,4 @@
 <?php
-$num + 10;
-echo pow($num, 6);
+    $numero = $_POST["num"];
+    echo "O númer é: ", $numero;
 ?>
