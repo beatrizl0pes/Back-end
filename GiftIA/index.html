@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentin - Ache aqui o presente ideal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Devonshire&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <img src="Presentin.png" width="200" alt="GeekIA Logo">
+
+        <h2>Especialista em achar o presente perfeito</h2>
+
+        <p>Responda e descubra qual é o presentin ideal.</p>
+
+        <form action="processa.php" method="POST">
+
+            <div class="form-group">
+                <label>Qual é a ocasião?</label>
+
+                <select name="ocasião" required>
+                    <option value="">Selecione...</option>
+                    <option value="Formal">Formal(Ex: Casamento, Festa de 15..)</option>
+                    <option value="Informal">Informal(Festa de aniversário, Chá de casa..)</option>
+                    <option value="Sem ocasião especial">Sem ocasião</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual a proximidade de vocês?</label>
+
+                <select name="proximidade" required>
+                    <option value="">Selecione...</option>
+                    <option value="1000% proximidade">Somos MUITO próximos</option>
+                    <option value="100% proximidade">Somos próximos</option>
+                    <option value="50% Proximidade">Não somos tão próximos</option>
+                    <option value="0% proximidade">Não somos próximos</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Que tipo de relação vocês tem?</label>
+
+                <select name="relacao" required>
+                    <option value="">Selecione...</option>
+                    <option value="Familiar ">Família 👨‍👩‍👧‍👦</option>
+                    <option value="Amizade ">Amizade 🫂</option>
+                    <option value="Conhecido ">Conhecido 😊</option>
+                    <option value="Desconhecido ">Desconhecido 🫥</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual o gênero da pessoa?</label>
+
+                <select name="genero" required>
+                    <option value="">Selecione...</option>
+                    <option value="Feminino">Feminino ♀️</option>
+                    <option value="Masculino">Masculino ♂️</option>
+                    <option value="Prefiro não dizer/Não sei ❓">Prefiro não dizer/Não sei ❓</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Faixa etária?</label>
+
+                <select name="idade" required>
+                    <option value="">Selecione...</option>
+                    <option value="Bebê">Bebê 🍼</option>
+                    <option value="Criança">Criança  🍭</option>
+                    <option value="Adolescente">Adolescente 📱</option>
+                    <option value="Adulto">Adulto 💼</option>
+                    <option value="Idoso">Idoso 🧓</option>
+                    
+                    
+
+                </select>
+            </div>
+
+            <button type="submit">Recomendar presentin🎁</button>
+
+        </form>
+
+    </div>
+</body>
+</html>

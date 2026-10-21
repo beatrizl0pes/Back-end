@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <img src="Tartarugas em Disputa pela Pizza (2).png" width=60>
+        <h1>Family Pizzaria</h1>
+        <img src="Donatello Feliz com a porra da pizza.png" width=60>
+        <h3 class="subtitulo"> 🍕Monte sua pizza conosco 🍕</h3>
+        <br>
+        <form action="pedido.php" method="POST">
+            <h3>1. Tamanho:</h3>
+            <label><input type="radio" name="tamanho" value="Broto" checked> Broto (R$ 49,90)</label>
+            <label><input type="radio" name="tamanho" value="Grande"> Grande (R$ 79,90)</label>
+
+            <h3>2. Sabores (1 ou 2):</h3>
+            <label><input type="checkbox" name="sabores[]" value="Strogonoff de Carne">Strogonoff de Carne</label>
+            <label><input type="checkbox" name="sabores[]" value="Quatro queijos">Quatro queijos</label>
+            <label><input type="checkbox" name="sabores[]" value="Nordestina">Nordestina</label>
+            <label><input type="checkbox" name="sabores[]" value="Costela">Costela</label>
+            <label><input type="checkbox" name="sabores[]" value="Frango">Frango</label>
+
+            <h3>3. Refrigerante:</h3>
+            <select name="refri">
+                <option value="Nenhum">Nenhum</option>
+                <option value="Coca">Coca 2L (R$ 14)</option>
+                <option value="Guarana">Guaraná 2L (R$ 12)</option>
+                <option value="Fanta 2L">Fanta 2L (R$ 12)</option>
+                <option value="Sprite 2L">Sprite 2L (R$ 12)</option>
+            </select>
+
+            <h3>4. Borda Recheada:</h3>
+            <label><input type="radio" name="borda" value="Nenhuma" checked> Nenhuma (R$ 0)</label>
+            <label><input type="radio" name="borda" value="Catupiry"> Catupiry (R$ 5)</label>
+            <label><input type="radio" name="borda" value="Cheddar"> Cheddar (R$ 5)</label>
+
+            <h3>5. Cupom</h3>
+            <label><input type="text" name="cupom"> Cupom de desconto</label>
+                     
+            <button type="submit">Calcular Total</button>
+        </form>
+    </div>
+</body>
+</html>

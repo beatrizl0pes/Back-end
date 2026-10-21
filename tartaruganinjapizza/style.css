@@ -1,0 +1,57 @@
+img{
+    display: inline-block;
+}
+h1{
+    display: inline-block;
+    text-align: center;
+    color: green;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.subtitulo{
+
+    text-align: center;
+    font-family: JetBrains Mono;
+
+}
+
+body {
+    font-family: sans-serif;
+    background: #4a8053;
+    padding-top: 20px;
+    background-image: url('watermarked_img_18362588791198396888.jpg');
+    
+}
+
+.box {
+    background: rgb(255, 255, 255);
+    width: 380px;
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid #1e5a34;
+}
+
+label, select, button, .btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+}
+
+button, .btn {
+    padding: 10px;
+    background: #0c2704;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.wsp {
+    background: #25d366;
+}
