@@ -85,3 +85,9 @@ th {
     border-radius: 5px;
     font-weight: bold;
 }
+.img-produto{
+    width: 140px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
